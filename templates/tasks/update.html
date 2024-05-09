@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Update{% endblock title %}
+{% block scripts %}
+<script>
+    // use ajax to submit the form without jquery
+    document.querySelector('#update_task').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        fetch("{% url 'tasks:api_task_update' pk=task.pk %}", {
+            method: 'PATCH',
+            body: formData,
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}'
+            }
+        }).then(response => {
+            if (response.ok) {
+                document.getElementById('errors').innerHTML = `
+                <div class="alert alert-success" role="alert">
+                    Task updated successfully!
+                </div>
+                `;
+            } else {
+                response.json().then(data => {
+                    // map all errors and update alert
+                    document.getElementById('errors').innerHTML = `
+                    <div class="alert alert-danger" role="alert">
+                        ${Object.keys(data).map(key => data[key].map(message => `<div>${message}</div>`))}
+                    </div>`;
+                });
+            }
+        });
+    });
+</script>
+{% endblock scripts %}
+{% block content %}
+
+<div class="container my-3 d-flex justify-content-center">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Update Task</h1>
+
+            <div id="errors"></div>
+
+            <form id="update_task" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block styles %}
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+{% endblock styles %}
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>
+                Task Manager
+            </h1>
+            <p class="my-3">
+                Welcome to the Task Manager application. Your one stop to manage all your tasks.
+            </p>
+            <p>
+                <a href="{% url 'tasks:task_list' %}" class="btn btn-primary">
+                    Manage tasks
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

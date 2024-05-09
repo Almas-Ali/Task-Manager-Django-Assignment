@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load humanize %} {% comment %} builtin template tag {% endcomment %}
+{% load extra_tags %} {% comment %} custom template tag {% endcomment %}
+{% block title %}
+{{ task.title }}
+{% endblock title %}
+{% block content %}
+
+<div class="container my-3 d-flex justify-content-center">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">{{ task.title }}</h1>
+
+      {% for photo in task.photos.all %}
+      <img src="{{ photo.photo.url }}" alt="{{ photo.title }}" class="img-thumbnail" height="200" />
+      {% endfor %}
+
+      <div class="my-3">
+
+        <p>
+          <strong>Description:</strong>
+          {{ task.description }}
+        </p>
+        <p>
+          <strong>Created on:</strong>
+          {{ task.created_at }}
+        </p>
+        <p>
+          <strong>Due:</strong>
+          {{ task.due_date }}
+        </p>
+        <p>
+          <strong>Created at:</strong>
+          {{ task.created_at|timesince }} ago
+        </p>
+        <p>
+          <strong>Priority:</strong>
+          {{ task.priority|priority_mode }}
+        </p>
+        <p>
+          <strong>Created by:</strong>
+          {{ task.user }}
+        </p>
+
+        {% if task.is_completed %}
+        <p><i class="fas fa-check text-success"></i> Completed</p>
+        {% else %}
+        <p><i class="fas fa-times text-danger"></i> Not completed</p>
+        {% endif %}
+      </div>
+
+      <div class="text-center">
+        <a href="{% url 'tasks:task_list' %}" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i> Back
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

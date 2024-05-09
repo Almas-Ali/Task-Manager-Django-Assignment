@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock title %}
+{% block scripts %}
+
+<script>
+    document.querySelector('#login_form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        fetch("{% url 'tasks:api_login' %}", {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}'
+            }
+        }).then(response => {
+            if (response.ok) {
+                window.location.href = "{% url 'tasks:task_list' %}";
+            } else {
+                response.json().then(data => {
+                    document.getElementById('errors').innerHTML = `
+                    <div class="alert alert-danger" role="alert">
+                        Invalid username or password
+                    </div>`;
+                });
+            }
+        });
+    });
+</script>
+
+{% endblock scripts %}
+{% block content %}
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1 class="mb-3">
+                Login to Task Manager
+            </h1>
+            
+            <div id="errors"></div>
+
+            <form id="login_form">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

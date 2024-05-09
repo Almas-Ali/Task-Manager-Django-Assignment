@@ -1,0 +1,781 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-05-09T18:58:37.201Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Make a phone call.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Priority\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-05-09T18:58:50.100Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Read the book.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Priority\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-05-09T18:58:58.973Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Read the book.",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-05-09T18:59:08.094Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Make a phone call.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"User\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-05-09T18:59:19.182Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Get back to code.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Priority\", \"User\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-05-09T18:59:39.648Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Drink Tea",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Priority\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-05-09T19:04:31.231Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Read the book.",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Priority\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Gallery",
+    "content_type": 7,
+    "codename": "add_gallery"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Gallery",
+    "content_type": 7,
+    "codename": "change_gallery"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Gallery",
+    "content_type": 7,
+    "codename": "delete_gallery"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Gallery",
+    "content_type": 7,
+    "codename": "view_gallery"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Task",
+    "content_type": 8,
+    "codename": "add_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Task",
+    "content_type": 8,
+    "codename": "change_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Task",
+    "content_type": 8,
+    "codename": "delete_task"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Task",
+    "content_type": 8,
+    "codename": "view_task"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$jukMF2Xbd2iD5fDCfKEvZm$TH6JKC2Ckzsx5CjfEIJiaMNHzeWsJK/jZsjLrMA2wDs=",
+    "last_login": "2024-05-09T17:30:34.434Z",
+    "is_superuser": true,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-09T16:35:52.914Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$n68PnURCnjr6WxPOB12loB$W3xs0z/MKIjaSKbe0JGdALXgAZ/bqbrvMRvDO7A+IEs=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "test2",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-09T18:39:44.875Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$CuWlnx58qKvqe9UXnt9lKx$fVhVWLOIGtH2v0FBbuOvPxmaVc1nDPZIk8W4XfjMWOc=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "test3",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-09T18:39:56.116Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "tasks",
+    "model": "gallery"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "tasks",
+    "model": "task"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bcrzvm9zk3enryi68i9wsp5xnlkcsge9",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEDxQFcuvcbyPAYqRqalHZl_HfbpAvd3nPOfYtA61LD2sscxiwuQonT7xYpPUvbQX5Qu08yTW2Zxyh3RR60y9uUy-t6uH8HlXrdamfYK484AJWSLGvNhp2ClBk4GUBnNmBAR0Jj2WZObBG0PiP6QZP4fAHoRDfb:1s57bG:yg83RR-ogYImqsC8EYjOUX8TDuN7vgFRrYSDhorN68Q",
+    "expire_date": "2024-05-23T17:30:34.784Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "iwtxoh0w0ystz4k7919hajn4x2rny191",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSEDxQFcuvcbyPAYqRqalHZl_HfbpAvd3nPOfYtA61LD2sscxiwuQonT7xYpPUvbQX5Qu08yTW2Zxyh3RR60y9uUy-t6uH8HlXrdamfYK484AJWSLGvNhp2ClBk4GUBnNmBAR0Jj2WZObBG0PiP6QZP4fAHoRDfb:1s57Gf:TeDDTPnpNvm7joNKNcJb6GDFFbbxXglIXwcTH-hjZDE",
+    "expire_date": "2024-05-23T17:09:17.719Z"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 1,
+  "fields": {
+    "created_at": "2024-05-09T17:11:09.261Z",
+    "updated_at": "2024-05-09T17:11:09.261Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-05-09T17:12:48.715Z",
+    "updated_at": "2024-05-09T17:12:48.715Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_YPkgxPk.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-05-09T17:17:32.629Z",
+    "updated_at": "2024-05-09T17:17:32.629Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_16jkPgD.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-05-09T17:20:16.928Z",
+    "updated_at": "2024-05-09T17:20:16.929Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_yehYj1Y.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-05-09T17:21:28.170Z",
+    "updated_at": "2024-05-09T17:21:28.170Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_AzpgaVD.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 6,
+  "fields": {
+    "created_at": "2024-05-09T17:23:05.969Z",
+    "updated_at": "2024-05-09T17:23:05.969Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_k7fPSJg.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 7,
+  "fields": {
+    "created_at": "2024-05-09T17:24:16.963Z",
+    "updated_at": "2024-05-09T17:24:16.963Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_TAYBPRv.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 8,
+  "fields": {
+    "created_at": "2024-05-09T17:24:57.672Z",
+    "updated_at": "2024-05-09T17:24:57.672Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_ssuqH32.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 9,
+  "fields": {
+    "created_at": "2024-05-09T17:27:32.681Z",
+    "updated_at": "2024-05-09T17:27:32.682Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_gsj2zBy.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 10,
+  "fields": {
+    "created_at": "2024-05-09T17:28:59.765Z",
+    "updated_at": "2024-05-09T17:28:59.765Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_v3hfwG8.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 11,
+  "fields": {
+    "created_at": "2024-05-09T17:31:36.128Z",
+    "updated_at": "2024-05-09T17:31:36.128Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_wLaRqR5.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 12,
+  "fields": {
+    "created_at": "2024-05-09T17:32:58.724Z",
+    "updated_at": "2024-05-09T17:32:58.724Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_KAn34Tw.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 13,
+  "fields": {
+    "created_at": "2024-05-09T17:38:04.406Z",
+    "updated_at": "2024-05-09T17:38:04.406Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_vtBgFam.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 14,
+  "fields": {
+    "created_at": "2024-05-09T17:38:28.024Z",
+    "updated_at": "2024-05-09T17:38:28.024Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_3bRgWQ8.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 15,
+  "fields": {
+    "created_at": "2024-05-09T17:40:29.866Z",
+    "updated_at": "2024-05-09T17:40:29.866Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/wallpaperflare.com_wallpaper19.jpg"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 16,
+  "fields": {
+    "created_at": "2024-05-09T17:41:29.784Z",
+    "updated_at": "2024-05-09T17:41:29.784Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/default.jpg"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 17,
+  "fields": {
+    "created_at": "2024-05-09T17:45:16.190Z",
+    "updated_at": "2024-05-09T17:45:16.190Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/tea_cup_uAeFzy7.png"
+  }
+},
+{
+  "model": "tasks.gallery",
+  "pk": 18,
+  "fields": {
+    "created_at": "2024-05-09T18:34:07.812Z",
+    "updated_at": "2024-05-09T18:34:07.812Z",
+    "title": "",
+    "description": "",
+    "photo": "gallery/bteb-results-almasali-net-1024x768desktop-a1445f.png"
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 2,
+  "fields": {
+    "created_at": "2024-05-09T17:38:27.857Z",
+    "updated_at": "2024-05-09T18:59:39.626Z",
+    "title": "Drink Tea",
+    "description": "I need to drink tea at 5PM",
+    "due_date": "2024-05-28",
+    "priority": "1",
+    "is_completed": true,
+    "user": 1,
+    "photos": [
+      17
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 3,
+  "fields": {
+    "created_at": "2024-05-09T17:40:29.691Z",
+    "updated_at": "2024-05-09T19:05:00.374Z",
+    "title": "Get back to code.",
+    "description": "No more distraction. Get back to code.",
+    "due_date": "2024-05-29",
+    "priority": "3",
+    "is_completed": false,
+    "user": 3,
+    "photos": [
+      15
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 4,
+  "fields": {
+    "created_at": "2024-05-09T17:41:29.618Z",
+    "updated_at": "2024-05-09T18:59:08.055Z",
+    "title": "Make a phone call.",
+    "description": "Important phone call to Mr. X",
+    "due_date": "2024-05-24",
+    "priority": "1",
+    "is_completed": true,
+    "user": 2,
+    "photos": [
+      16
+    ]
+  }
+},
+{
+  "model": "tasks.task",
+  "pk": 5,
+  "fields": {
+    "created_at": "2024-05-09T18:34:07.643Z",
+    "updated_at": "2024-05-09T19:04:31.218Z",
+    "title": "Read the book.",
+    "description": "I need to read the book by the due date.",
+    "due_date": "2024-05-31",
+    "priority": "2",
+    "is_completed": false,
+    "user": 1,
+    "photos": [
+      18
+    ]
+  }
+}
+]
